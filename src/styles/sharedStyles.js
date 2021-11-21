@@ -29,7 +29,7 @@ const MainButton = styled.button`
     font-weight: 700;
     font-size: 18px;
     color: white;
-    margin-bottom: 15px;
+    margin: 20px 0 15px 0;
 `
 
 const SubButton = styled.p`
@@ -37,9 +37,35 @@ const SubButton = styled.p`
     font-weight: 700;
 `
 
+const Form = styled.form`
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    input{
+        border: none;
+        outline: none;
+        background-color: white;
+        width: 100%;
+        height: 60px;
+        border-radius: 10px;
+        padding: 15px;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+`
+
+const Loading = styled.img`
+    width: 10%;
+    margin-top: 15px;
+`
+
 export {
     Container,
     Title,
     MainButton,
     SubButton,
+    Form,
+    Loading,
 }
