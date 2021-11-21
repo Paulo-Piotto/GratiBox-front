@@ -61,6 +61,18 @@ const Loading = styled.img`
     margin-top: 15px;
 `
 
+const Text = styled.p`
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-weight: 300;
+`
+
+const SubTitle = styled.h2`
+    font-size: 22px;
+    margin: 50px 0 45px 0;
+    font-weight: bold;
+`
+
 export {
     Container,
     Title,
@@ -68,4 +80,6 @@ export {
     SubButton,
     Form,
     Loading,
+    Text,
+    SubTitle,
 }

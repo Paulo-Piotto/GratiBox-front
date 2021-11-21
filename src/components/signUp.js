@@ -21,16 +21,16 @@ export default function SignUp(){
             signUpUser({name, email, password})
             .then(() => {
                 setLoading(false);
-                alert('Usuário cadastrado com sucesso!')
-                navigate('/sign-in')
+                alert('Usuário cadastrado com sucesso!');
+                navigate('/sign-in');
             })
             .catch(() => {
                 setLoading(false);
                 alert('dados inválidos');
             })
         }else{
-            alert('As senhas precisam ser iguais!')
-            setLoading(false)
+            alert('As senhas precisam ser iguais!');
+            setLoading(false);
         }
         
     }
