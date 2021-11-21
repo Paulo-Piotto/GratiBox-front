@@ -5,9 +5,11 @@ import SignUp from "./components/signUp";
 import SignIn from "./components/signIn";
 import UserContext from './contexts/userContext';
 import Switch from "./components/switch";
+import NewPlan from "./components/newPlan";
 
 function App() {
   const [user, setUser] = useState({});
+  const [newPlan, setNewPlan] = useState({});
 
   return (
     <UserContext.Provider value={{user, setUser}}>
@@ -17,6 +19,7 @@ function App() {
           <Route path="/sign-up" element={<SignUp />} exact/>
           <Route path="/sign-in" element={<SignIn />} exact/>
           <Route path="/my-plan" element={<Switch />} exact/>
+          <Route path="/new-plan" element={<NewPlan setNewPlan={setNewPlan} />}  exact/>
         </Routes>
       </BrowserRouter>
     </UserContext.Provider>
