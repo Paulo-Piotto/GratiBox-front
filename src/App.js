@@ -6,6 +6,7 @@ import SignIn from "./components/signIn";
 import UserContext from './contexts/userContext';
 import Switch from "./components/switch";
 import NewPlan from "./components/newPlan";
+import Delivery from "./components/delivery";
 
 function App() {
   const [user, setUser] = useState({});
@@ -20,6 +21,7 @@ function App() {
           <Route path="/sign-in" element={<SignIn />} exact/>
           <Route path="/my-plan" element={<Switch />} exact/>
           <Route path="/new-plan" element={<NewPlan setNewPlan={setNewPlan} />}  exact/>
+          <Route path="/delivery" element={<Delivery newPlan={newPlan} />}  exact/>
         </Routes>
       </BrowserRouter>
     </UserContext.Provider>
