@@ -1,70 +1,116 @@
-# Getting Started with Create React App
+<h1 align="center">
+     💜 <a href="#" alt="GratiBox"> GratiBox </a>
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h3 align="center">
+   🍀 Seu aplicativo para te ajudar a expressar sua gratidão ao nível máximo. 💜
+</h3>  
+ 
+</p>
 
-## Available Scripts
+<h4 align="center">
+	🚧   Em produção 🚀 🚧
+</h4>
 
-In the project directory, you can run:
+Tabela de conteúdos
+=================
+<!--ts-->
+   * [Sobre o projeto](#-sobre-o-projeto)
+   * [Funcionalidades](#-funcionalidades)
+   * [Como executar o projeto](#-como-executar-o-projeto)
+   * [Tecnologias](#-tecnologias)
+     * [WebSite](#user-content-website--react----typescript)
+     * [Server](#user-content-server--nodejs----typescript)
+   * [Autor](#-autor)
+<!--te-->
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 💻 Sobre o projeto
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+💜 GratiBox - é uma forma de conectar pessoas em busca de expressar sua gratidão com produtos pensados exclusivamente para serem portais da gratidão.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## ⚙️ Funcionalidades
 
-### `npm run build`
+- [x] Os usuários podem se cadastrar, para isso será necessário:
+  - [x] nome
+  - [x] um e-mail
+  - [x] e a criação de uma senha
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [x] Uma vez cadastrados os usuários podem assinar um plano e escolher os produtos que deseja receber entre:
+  - [x] Chás
+  - [x] Incensos
+  - [x] Produtos orgânicos
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [x] Os planos são divididos em 2 tipos:
+  - [x] Mensal
+  - [x] Semanal
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [x] Para o plano Mensal o usuário pode escolher uma data de entrega entre:
+  - [x] Dia 01
+  - [x] Dia 10
+  - [x] Dia 20
+ 
+- [x] Para o plano Semanal o usuário pode escolher uma data de entrega entre:
+  - [x] Segunda-feira
+  - [x] Quarta-feira
+  - [x] Sexta-feira
 
-### `npm run eject`
+- [x] Selecionado o plano o usuário deve preencher os dados de entrega com:
+  - [x] Nome completo
+  - [x] Endereço
+  - [x] CEP
+  - [x] Cidade
+  - [x] Estado
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- [x] Uma vez assinado o plano o usuário poderá ver ao acessar o aplicativo, os dados de seu plano e as datas das próximas entregas
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 🚀 Como executar o projeto
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Este projeto é divido em duas partes:
+1. Backend (https://github.com/Paulo-Piotto/GratiBox-back) 
+2. Frontend (https://github.com/Paulo-Piotto/GratiBox-front)
 
-## Learn More
+O deploy do Backend foi realizado na plataforma gratuita Heroku, e o deploy do Frontend foi realizado na plataforma gratuita Vercel.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+💡Tanto o Frontend quanto o Backend estão disponíveis online e funcionando através do link: https://grati-box-front-tawny.vercel.app/
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Basta acessar o link e testar a aplicação!
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🛠 Tecnologias
 
-### Analyzing the Bundle Size
+As seguintes ferramentas foram usadas na construção do projeto:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+#### **Frontend**  ([React](https://reactjs.org/))
 
-### Making a Progressive Web App
+-   **[React Router Dom](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom)**
+-   **[React Icons](https://react-icons.github.io/react-icons/)**
+-   **[Axios](https://github.com/axios/axios)**
+-   **[dayjs](https://day.js.org/)**
+-   **[Styled Components](https://styled-components.com/)**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+#### **Server**  ([NodeJS](https://nodejs.org/en/))
 
-### Advanced Configuration
+-   **[Express](https://expressjs.com/)**
+-   **[CORS](https://expressjs.com/en/resources/middleware/cors.html)**
+-   **[bcrypt](https://www.npmjs.com/package/bcrypt/)**
+-   **[Postgres](https://node-postgres.com/)**
+-   **[dotENV](https://github.com/motdotla/dotenv)**
+-   **[uuId](https://www.npmjs.com/package/uuid)**
+-   **[Joi](https://github.com/hapijs/joi)**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## 🦸 Autor
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<a href="https://github.com/Paulo-Piotto">
+ <br />
+ <sub><b>Paulo Piotto</b></sub></a> <a href="https://github.com/Paulo-Piotto" title="Driven">🚀</a>
+ <br />
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
