@@ -20,8 +20,20 @@ function getPlan(token) {
     return axios.get(`${URL}plans`, config(token));
 }
 
+function postPlan(plan, token) {
+    return axios.post(`${URL}plans`, plan, config(token));
+}
+
+function postDelivery(data, token) {
+    return axios.post(`${URL}delivery`, data, config(token));
+}
+
+
+
 export{
     signInUser,
     signUpUser,
     getPlan,
+    postPlan,
+    postDelivery,
 }

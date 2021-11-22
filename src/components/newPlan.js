@@ -68,7 +68,7 @@ export default function NewPlan({setNewPlan}){
                     type: selectedPlan,
                     deliveryDate: selectedDay,
                     products: stringProducts,
-                    signDate: dayjs().format('DD/MM/YYYY'),
+                    signDate: dayjs().format('MMM D YYYY'),
                 });
         
                 navigate('/delivery');
@@ -78,7 +78,7 @@ export default function NewPlan({setNewPlan}){
                     type: selectedPlan,
                     deliveryDate: selectedDay,
                     products: stringProducts,
-                    signDate: dayjs().format('DD/MM/YYYY'),
+                    signDate: dayjs().format('MMM D YYYY'),
                 });
         
                 navigate('/delivery');
